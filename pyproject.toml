@@ -1,0 +1,55 @@
+[project]
+name = "ce-radiography"
+version = "0.1.0"
+description = "Cost & effectiveness calculations for radiographic diagnostics"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=1.5",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+skip-string-normalization = false
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+# Keep Ruff's linter aligned with Black's line length.
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+# Core linting + import sorting + upgrades + bugbear + datetime tz + type hints
+select = [
+  "E",  # pycodestyle errors
+  "F",  # pyflakes
+  "I",  # isort (import sorting)
+  "UP", # pyupgrade
+  "B",  # flake8-bugbear
+  "DTZ",# flake8-datetimez
+  "ANN" # flake8-annotations (type-hinting)
+]
+# Let Black handle long lines.
+ignore = ["E501"]
+
+per-file-ignores = { "__init__.py" = ["F401"] }
+
+[tool.ruff.lint.isort]
+known-first-party = ["ce_radiography"]
+combine-as-imports = true
+force-sort-within-sections = true

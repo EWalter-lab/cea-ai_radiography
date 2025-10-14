@@ -1,0 +1,52 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.pkl
+*.pickle
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage / test
+.coverage
+.coverage.*
+htmlcov/
+pytestdebug.log
+.pytest_cache/
+
+# Linters / tooling
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+
+# Project data (keep datasets local)
+01_Data/
+1_Data/
+Costs/
+Literatur/
+Old_Data/
+

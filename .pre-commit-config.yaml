@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.6.8    # update as needed
+    hooks:
+      - id: ruff
+        args: [--fix]    # auto-fix lint & sort imports
+      - id: ruff-format  # optional: keep disabled if you want Black to be the only formatter
+        stages: [manual] # keep out of default run; Black handles formatting
+
+  - repo: https://github.com/psf/black
+    rev: 24.8.0         # update as needed
+    hooks:
+      - id: black
+        args: [--line-length=88]
