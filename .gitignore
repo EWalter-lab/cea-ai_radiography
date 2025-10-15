@@ -44,8 +44,9 @@ Thumbs.db
 *.tmp
 
 # Project data (keep datasets local)
-01_Data/
-1_Data/
+01_Data/*/
+01_Data/master_dataset.csv
+02_Analysis/*/
 Costs/
 Literatur/
 Old_Data/

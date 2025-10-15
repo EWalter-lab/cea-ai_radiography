@@ -1,5 +1,8 @@
 # ce-radiography
 
+## Abstract
+Artificial intelligence (AI) is transforming medical imaging, yet its economic impact in dentistry remains largely unexplored. This study evaluated the cost-effectiveness of AI-assisted detection of apical periodontitis on panoramic radiographs, including downstream clinical decision-making. Using data from a randomized study on AI-assisted detection of apical lesions, a decision-analytic model was established to analyse costs and effectiveness from a German mixed-payer perspective. AI support reduced average costs per case and increased treatment effectiveness, outperforming unaided examiner performance. These gains were primarily driven by improved specificity, reducing false-positive detection. However, effects varied by examiner experience; junior clinicians achieved the greatest cost savings and effectiveness gains, whereas senior examiners showed reduced sensitivity and slightly lower effectiveness at similar costs. AI-assisted diagnostics offer significant potential to improve cost-effectiveness by reducing overtreatment, with benefits being most pronounced among less experienced practitioners. Adapting AI systems to individual examiners or experience levels might further enhance clinical and economic impact. 
+
 Cost and effectiveness calculations for radiographic diagnostics (paper code).
 
 This package provides a small, reproducible API to compute:
@@ -32,15 +35,10 @@ It’s designed to be transparent and easy to test.
 
 ```bash
 # clone your repo
-git clone <your-repo-url> && cd <repo>
-
-# optional: create env
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+git clone EWalter-lab/cea-ai_radiography && cd cea-ai_radiography
 
 # install package (editable) + dev tools
 pip install -e .
-pip install black ruff pytest
 ```
 
 If you’re using the provided `pyproject.toml`, you can also do:
