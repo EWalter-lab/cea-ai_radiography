@@ -157,8 +157,7 @@ class CostEffectivenessCalculator:
 
     def _fn_td_cost(self) -> float:
         """Calculation of FN treatment costs"""
-        return (
-            self.costs.examination + 
+        return (self.costs.examination + 
             self.costs.intraoral_radiography + 
             self.costs.rct + 
             self.costs.crown)
